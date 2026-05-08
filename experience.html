@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experience</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .timeline {
+            position: relative;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #1b5e20;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .container.left {
+            left: 0;
+        }
+
+        .container.right {
+            left: 50%;
+        }
+
+        .content {
+            padding: 25px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .content h2 {
+            color: #1b5e20;
+            margin-top: 0;
+        }
+
+        .content p {
+            line-height: 1.6;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            right: -9px;
+            background-color: #1b5e20;
+            border-radius: 50%;
+            top: 30px;
+            z-index: 1;
+        }
+
+        .right::after {
+            left: -9px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .timeline::after {
+                left: 20px;
+            }
+
+            .container {
+                width: 100%;
+                padding-left: 60px;
+                padding-right: 20px;
+            }
+
+            .container.right {
+                left: 0;
+            }
+
+            .container.left::after,
+            .container.right::after {
+                left: 11px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<nav>
+    <div class="nav-left">AMIRUL AIMAN</div>
+
+    <div class="nav-center">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="role.html">Role</a>
+        <a href="experience.html">Experience</a>
+    </div>
+
+    <div class="nav-right">
+        <a href="contact.html">Contact Me</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Professional Experience</h1>
+    <p>Career journey in veterinary services</p>
+</section>
+
+<div class="timeline">
+
+    <div class="container left">
+        <div class="content">
+            <h2>Beginning of Career</h2>
+
+            <p>
+                He started working after graduating from the Malaysian Veterinary Institute.
+            </p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h2>Experience at Agrovet</h2>
+
+            <p>
+                He works as a Veterinary Assistant at Taman Agrovet Perlis.
+            </p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h2>Career Development</h2>
+
+            <p>
+                He was promoted to assist in slaughterhouse operations.
+            </p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h2>Challenges Faced</h2>
+
+            <p>
+                His main challenge is maintaining animal health and safety.
+            </p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h2>Skills Developed</h2>
+
+            <p>
+                He gained skills in livestock handling and farm supervision.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 AMIRUL AIMAN</p>
+</footer>
+
+</body>
+</html>
